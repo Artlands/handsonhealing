@@ -12,3 +12,5 @@ class App extends Component {
 }
 
 export default App;
+
+// https://github.com/Semantic-Org/Semantic-UI-React/blob/master/docs/src/layouts/FixedMenuLayout.js
