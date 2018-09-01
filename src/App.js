@@ -1,12 +1,25 @@
 import React, { Component } from 'react';
-import Navbar from './components/Navbar.js';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { Container } from 'semantic-ui-react';
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import Contact from './components/Contact';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Navbar />
-      </div>
+      <BrowserRouter>
+        <div>
+          <Navbar />
+          <Container style={{padding: '8em 3em 3em 3em' }}>
+            <Route exact path='/' component={Home}/>
+            <Route path='/contact' component={Contact}/>
+          </Container>
+          <Footer />
+        </div>
+      </BrowserRouter>
     );
   }
 }
