@@ -1,10 +1,16 @@
 import React from 'react';
-import { Container, Dropdown, Menu } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
+import logo from '../favicon.ico'
+import { Container, Dropdown, Menu, Image} from 'semantic-ui-react';
 
 const Navbar = () => (
-  <Menu fixed='top'>
+  <Menu fixed='top' inverted>
     <Container>
-      <Menu.Item>Home</Menu.Item>
+        <Menu.Item as='a' header>
+          <Image size='mini' src={ logo } style={{ marginRight: '1.5em' }} />
+          Hands On Healing For the Body
+        </Menu.Item>
+      <Menu.Item><Link to="/">Home</Link></Menu.Item>
       <Menu.Item>About</Menu.Item>
       <Dropdown text='Massages' pointing className='link item'>
         <Dropdown.Menu>
@@ -22,7 +28,7 @@ const Navbar = () => (
       <Menu.Item>Policies</Menu.Item>
       <Menu.Item>Benefits</Menu.Item>
       <Menu.Item>Service Areas</Menu.Item>
-      <Menu.Item>Contact</Menu.Item>
+      <Menu.Item><Link to="/contact">Contact</Link></Menu.Item>
     </Container>
   </Menu>
 )
