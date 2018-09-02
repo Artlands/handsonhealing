@@ -1,12 +1,13 @@
 import React from 'react';
-import { Grid, Segment, Divider, Header, List, Image, Button } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
+import { Grid, Segment, Divider, Header, List, Image, Button} from 'semantic-ui-react';
 import Slides from './Carousel';
 
 
 const Home = () => {
   return(
     <div>
-        <Grid columns='three' divided>
+        <Grid columns='three' divided c>
           <Grid.Row>
             <Slides/>
           </Grid.Row>
@@ -31,7 +32,7 @@ const Home = () => {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        <Grid columns = {2}>
+        <Grid columns = {2} stackable>
           <Grid.Row textAlign='center'>
             <Grid.Column>
              <Image
@@ -68,22 +69,22 @@ const Home = () => {
         <Segment padded >
           <List horizontal selection >
             <List.Item>
-              <List.Header>Deep Tissue Massage</List.Header>
+              <List.Header><Link to='/deep-tissue-massage'>Deep Tissue Massage</Link></List.Header>
             </List.Item>
             <List.Item>
               <List.Header>Lymph Drainage Therapy</List.Header>
             </List.Item>
             <List.Item>
-              <List.Header>Myofascial Release</List.Header>
+              <List.Header><Link to='/myofascial-release'>Myofascial Release</Link></List.Header>
             </List.Item>
             <List.Item>
               <List.Header>Positional Release</List.Header>
             </List.Item>
             <List.Item>
-              <List.Header>Post-Natal Massage</List.Header>
+              <List.Header><Link to='/post-natal-massage'>Post-Natal Massage</Link></List.Header>
             </List.Item>
             <List.Item>
-              <List.Header>Pre-Natal Massage</List.Header>
+              <List.Header><Link to='/pre-natal-massage'>Pre-Natal Massage</Link></List.Header>
             </List.Item>
             <List.Item>
               <List.Header>Reflexology</List.Header>
@@ -92,13 +93,13 @@ const Home = () => {
               <List.Header>Rolfing</List.Header>
             </List.Item>
             <List.Item>
-              <List.Header>Sports Massage</List.Header>
+              <List.Header><Link to='/sports-massage'>Sports Massage</Link></List.Header>
             </List.Item>
             <List.Item>
-              <List.Header>Swedish Massage</List.Header>
+              <List.Header><Link to='/swedish-massage'>Swedish Massage</Link></List.Header>
             </List.Item>
             <List.Item>
-              <List.Header>Trigger Point Therapy</List.Header>
+              <List.Header><Link to='/trigger-point-massage'>Trigger Point Therapy</Link></List.Header>
             </List.Item>
           </List>
         </Segment>
@@ -112,7 +113,7 @@ const Home = () => {
             <p>What the People of Abernathy should know when looking for a Massage Therapist</p>
         </Divider>
 
-        <Grid columns = {3}>
+        <Grid columns = {3} stackable>
           <Grid.Row>
             <Grid.Column >
                <Segment padded style={{background:"#DCDCDC"}}>

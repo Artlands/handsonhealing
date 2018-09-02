@@ -17,7 +17,7 @@ const Policies = () => {
         <List.Item>Increases mobility</List.Item>
         <p>Years of repetitive motion can lock the body into a routine which limits your range of motion. By performing a variety of massage techniques and stretches the muscles ‘wake up’ and begin to increase their range of motion.</p>
         <List.Item>Improves circulation</List.Item>
-        <p>The circulatory system is intertwined with the muscles. Thus, restoring the proper 'function' of the muscles opens up the blood vessels and increases blood flow; a very important part of any well-functioning body. Massage therapy oxygenates not only the blood, but the muscles, as well.</p>
+        <p>The circulatory system is intertwined with the muscles. Thus, restoring the proper function of the muscles opens up the blood vessels and increases blood flow; a very important part of any well-functioning body. Massage therapy oxygenates not only the blood, but the muscles, as well.</p>
         <List.Item>Detoxifies your system</List.Item>
         <p>Sometimes the body holds toxins in specific areas due to physical trauma and strain. By working these problem areas the toxins are released back into the blood stream where the body eliminates them.</p>
         <List.Item>Promotes relaxation</List.Item>
@@ -34,7 +34,7 @@ const Policies = () => {
         <List.Item>Leave you with more energy</List.Item>
         <p>Many of our therapies attempt to tune into and manipulate the muscle and nerve energy flow of the body. By opening blockages and promoting over all well-being we enhance the body’s natural production of energy.</p>
         <List.Item>Reduce fatigue</List.Item>
-        <p>The muscles in your body hold fatigue in your body for a multitude of reasons. By massaging the muscles the body is told to reboot the proper 'function' of those problematic areas. Also as many of our therapies involve a holistic approach to healing the body , fatigue is reduced In the whole body.</p>
+        <p>The muscles in your body hold fatigue in your body for a multitude of reasons. By massaging the muscles the body is told to reboot the proper function of those problematic areas. Also as many of our therapies involve a holistic approach to healing the body , fatigue is reduced In the whole body.</p>
         <List.Item>Improve concentration</List.Item>
         <p>A relaxed body is essential for a relaxed mind. By removing stress from the fascia and improving circulation the body is able to return to homeostasis instead of being preoccupied with its internal and unconscious issues.</p>
       </List>

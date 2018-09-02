@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container, Segment, Grid, Header, List, Button, Icon} from 'semantic-ui-react';
+import { Container, Segment, Grid, Header, List, Icon} from 'semantic-ui-react';
 
 const Footer = () => (
   <Segment vertical style={{ margin: 'em 0em 0em', padding: '3em 0em', background:"#AFEEEE", }}>
-      <Container textAlign='center'>
-        <Grid divided stackable>
-          <Grid.Row>
+      <Container >
+        <Grid divided stackable centered>
+          <Grid.Row >
             <Grid.Column width={3}>
               <Header  as='h4' content='Opening Hours' />
               <List link >
@@ -24,22 +24,28 @@ const Footer = () => (
               <Header as='h4' content='Social Media' />
               <List link>
                 <List.Item >
-                  <Button color='twitter'>
-                    <Icon name='twitter' /> Twitter
-                  </Button>
+                  <Icon.Group size ='large'>
+                    <Icon name='wechat' color='green'/>
+                  </Icon.Group>
+                  WeChat
                 </List.Item>
                 <List.Item >
-                  <Button color='facebook'>
-                    <Icon name='facebook' /> Facebook
-                  </Button>
+                  <Icon.Group size ='large'>
+                    <Icon name='facebook' color='blue'/>
+                  </Icon.Group>
+                  Facebook
                 </List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={3}>
               <Header as='h4' content='Payments' />
               <List link>
-                <List.Item >Placeholder</List.Item>
-                <List.Item >Placeholder</List.Item>
+                <List.Item >
+                  <Icon name='dollar' size ='large'/>
+                  <Icon name='cc visa' size ='large'/>
+                  <Icon name='cc mastercard' size ='large'/>
+                  <Icon name='cc discover' size ='large'/>
+                </List.Item>
               </List>
             </Grid.Column>
           </Grid.Row>
