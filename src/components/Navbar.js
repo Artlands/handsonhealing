@@ -4,14 +4,14 @@ import logo from '../favicon.ico'
 import { Container, Dropdown, Menu, Image} from 'semantic-ui-react';
 
 const Navbar = () => (
-  <Menu fixed='top' inverted>
-    <Container>
-        <Menu.Item as='a' header>
-          <Image size='mini' src={ logo } style={{ marginRight: '1.5em' }} />
-          Hands On Healing For the Body
-        </Menu.Item>
-      <Menu.Item><Link to="/">Home</Link></Menu.Item>
-      <Menu.Item>About</Menu.Item>
+  <Menu fixed='top' style={{background:"#AFEEEE"}}>
+    <Container >
+      <Menu.Item as='a' header>
+        <Image size='mini' src={ logo } style={{ marginRight: '1.5em'}} />
+        Hands On Healing For the Body
+      </Menu.Item>
+      <Menu.Item as='a'><a href="/">Home</a></Menu.Item>
+      <Menu.Item as='a'><Link to='/about'>About</Link></Menu.Item>
       <Dropdown text='Massages' pointing className='link item'>
         <Dropdown.Menu>
           <Dropdown.Item>Western Massage</Dropdown.Item>
@@ -24,11 +24,11 @@ const Navbar = () => (
           <Dropdown.Item>Trigger Point Massage</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
-      <Menu.Item>Prices</Menu.Item>
-      <Menu.Item>Policies</Menu.Item>
-      <Menu.Item>Benefits</Menu.Item>
-      <Menu.Item>Service Areas</Menu.Item>
-      <Menu.Item><Link to="/contact">Contact</Link></Menu.Item>
+      <Menu.Item as='a'><Link to='/prices'>Prices</Link></Menu.Item>
+      <Menu.Item as='a'><Link to='/policies'>Policies</Link></Menu.Item>
+      <Menu.Item as='a'><Link to='/benefits'>Benefits</Link></Menu.Item>
+      <Menu.Item as='a'>Service Areas</Menu.Item>
+      <Menu.Item as='a'><Link to="/contact">Contact</Link></Menu.Item>
     </Container>
   </Menu>
 )

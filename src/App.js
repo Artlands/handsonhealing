@@ -5,6 +5,10 @@ import { Container } from 'semantic-ui-react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
+import About from './components/About';
+import Prices from './components/Prices';
+import Policies from './components/Policies';
+import Benefits from './components/Benefits';
 import Contact from './components/Contact';
 
 class App extends Component {
@@ -13,8 +17,12 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Navbar />
-          <Container style={{padding: '8em 3em 3em 3em' }}>
+          <Container style={{margin: '7em 3em 3em 3em' }}>
             <Route exact path='/' component={Home}/>
+            <Route path='/about' component={About}/>
+            <Route path='/prices' component={Prices}/>
+            <Route path='/policies' component={Policies}/>
+            <Route path='/benefits' component={Benefits}/>
             <Route path='/contact' component={Contact}/>
           </Container>
           <Footer />
@@ -25,5 +33,3 @@ class App extends Component {
 }
 
 export default App;
-
-// https://github.com/Semantic-Org/Semantic-UI-React/blob/master/docs/src/layouts/FixedMenuLayout.js
